@@ -10,7 +10,6 @@ export const Title = styled.h1`
 
 export const MetadataList = styled.ul`
     display: flex;
-    list-style: none;
 `
 export const StatisticsItem = styled.li`
     padding: 10px;

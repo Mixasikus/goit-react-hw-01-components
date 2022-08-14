@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 
 export const Friendlist = styled.ul`
-    list-style: none;
+    margin-bottom: 20px;
 `
 export const FriendsItem = styled.li`
     display: flex;
@@ -21,9 +21,9 @@ export const Status = styled.span`
             case true:
             return "red";
             case false:
-                return "black";
+            return "black";
             default:
-                return "black"
+            return "black"
     }}}
 }
 ` 
