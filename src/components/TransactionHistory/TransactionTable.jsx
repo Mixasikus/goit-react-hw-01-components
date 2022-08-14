@@ -1,11 +1,13 @@
-export default function TransactionTable({ type, amount, currency }) {
-    return (<tbody>
+import {Tbody, TbodyTd} from "./TransactionHistory.styled"
+
+export default function TransactionTbody({ type, amount, currency }) {
+    return (<Tbody>
     <tr>
-      <td>{type}</td>
-      <td>{amount}</td>
-      <td>{currency}</td>
+      <TbodyTd>{type}</TbodyTd>
+      <TbodyTd>{amount}</TbodyTd>
+      <TbodyTd>{currency}</TbodyTd>
     </tr>
-  </tbody>
+  </Tbody>
     )
 }
 

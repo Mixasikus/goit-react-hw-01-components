@@ -1,12 +1,12 @@
-import TransactionTable from "./TransactionTable"
-import {TableTransactions, TableHead} from "./TransactionHistory.styled"
+import TransactionTbody from "./TransactionTable"
+import {Table, TableThead, TransactionContainer, TableTheadTh} from "./TransactionHistory.styled"
 
 export default function TransactionHistory({ items }) {
-    return (<TableTransactions><TableHead>
+    return (<TransactionContainer><Table><TableThead>
     <tr>
-      <th>Type</th>
-      <th>Amount</th>
-      <th>Currency</th>
+      <TableTheadTh>Type</TableTheadTh>
+      <TableTheadTh>Amount</TableTheadTh>
+      <TableTheadTh>Currency</TableTheadTh>
     </tr>
-  </TableHead>{items.map(item =>(<TransactionTable key={item.id} type={item.type} amount={item.amount} currency={item.currency}></TransactionTable>))}</TableTransactions> )
+  </TableThead>{items.map(item =>(<TransactionTbody key={item.id} type={item.type} amount={item.amount} currency={item.currency}></TransactionTbody>))}</Table></TransactionContainer> )
 }
