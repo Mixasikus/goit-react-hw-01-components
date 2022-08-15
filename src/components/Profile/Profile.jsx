@@ -1,7 +1,22 @@
-import PropTypes from 'prop-types'
-import { CardProfile, CardDescription, CardImg, StatsList, StatsItem, Quantity } from './Profile.styled'
+import PropTypes from 'prop-types';
+import {
+  CardProfile,
+  CardDescription,
+  CardImg,
+  StatsList,
+  StatsItem,
+  Quantity,
+} from './Profile.styled';
 
-export default function Profile({avatar, username, tag, location, statsFollowers, statsViews, statsLikes}) {
+export default function Profile({
+  avatar,
+  username,
+  tag,
+  location,
+  statsFollowers,
+  statsViews,
+  statsLikes,
+}) {
   return (
     <CardProfile>
       <CardDescription>
@@ -29,11 +44,11 @@ export default function Profile({avatar, username, tag, location, statsFollowers
 }
 
 Profile.propTypes = {
-    avatar: PropTypes.string.isRequired,
-    username: PropTypes.string.isRequired,
-    tag: PropTypes.string.isRequired,
-    location: PropTypes.string.isRequired,
-    statsFollowers: PropTypes.number.isRequired,
-    statsViews: PropTypes.number.isRequired,
-    statsLikes: PropTypes.number.isRequired,
-}
+  avatar: PropTypes.string.isRequired,
+  username: PropTypes.string.isRequired,
+  tag: PropTypes.string.isRequired,
+  location: PropTypes.string.isRequired,
+  statsFollowers: PropTypes.number.isRequired,
+  statsViews: PropTypes.number.isRequired,
+  statsLikes: PropTypes.number.isRequired,
+};
