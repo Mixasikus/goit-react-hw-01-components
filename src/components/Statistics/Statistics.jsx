@@ -1,10 +1,10 @@
 import Statistic from './StatisticsList';
 import { SectionStatistics, Title, MetadataList } from './Statistics.styled';
 
-export default function StatisticsList({ items }) {
+export default function StatisticsList({ title, items }) {
   return (
     <SectionStatistics>
-      <Title>Upload stats</Title>
+      {title && <Title>{title}</Title>}
       <MetadataList>
         {items.map(item => (
           <Statistic

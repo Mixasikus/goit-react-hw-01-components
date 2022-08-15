@@ -21,6 +21,7 @@ export default function App() {
         statsViews={user.stats.views}
         statsLikes={user.stats.likes}
       />
+      <StatisticsList title="Upload stats" items={data} />
       <StatisticsList items={data} />
       <FriendList items={friends} />
       <TransactionHistory items={transactions} />
